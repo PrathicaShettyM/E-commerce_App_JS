@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1.6rem;
+}
+.container{
+    max-width: 144rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+.products{
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+.product{
+    background: #f4f8f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.products img{
+    width: 100%;
+}
+.products .product-title{
+    font-size: 2rem;
+}
+.product-title,
+.product-price-container,
+.product-description,
+.product-category{
+    padding: 0.5rem 0;
+}
+.product-price-container{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-content{
+    padding: 1rem 2rem;
+}
+.product-description{
+    text-align: justify;
+}
+.add-to-cart{
+    background: white;
+    font-weight: 500;
+    color: #2cf902;
+    border: 3px solid #2cf902;
+    border-radius: 6px;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-to-cart:hover{
+    background: #2cf902 ;
+    color: white;
+}
+.add-to-cart ionicon{
+    font-size: 3rem;
+}
